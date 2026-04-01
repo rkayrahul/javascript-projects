@@ -15,14 +15,14 @@ const employees = [
   },
   {
     id: 3,
-    name: "Aman",
+    name: "RAman",
     department: "IT",
     salary: 70000,
     experience: 5
   },
   {
     id: 4,
-    name: "Neha",
+    name: "Sneha",
     department: "Finance",
     salary: 60000,
     experience: 4
