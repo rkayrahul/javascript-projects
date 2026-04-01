@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>SkillForge - Login</title>
+  <link rel="stylesheet" href="style.css">
+  <style>body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  overflow: hidden;
+  background: linear-gradient(-45deg, #0f2027, #203a43, #2c5364, #1c92d2);
+  background-size: 400% 400%;
+  animation: gradientBG 10s ease infinite;
+  color: white;
+}
+
+@keyframes gradientBG {
+  0% {background-position: 0% 50%;}
+  50% {background-position: 100% 50%;}
+  100% {background-position: 0% 50%;}
+}
+
+#particles-js {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100vh;
+}
+
+.left-section h1 span {
+  color: #00f7ff;
+}
+
+.login-box {
+  backdrop-filter: blur(20px);
+  background: rgba(255, 255, 255, 0.1);
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 8px 40px rgba(0,0,0,0.4);
+  text-align: center;
+  width: 300px;
+}
+
+.login-box input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 8px;
+}
+
+.login-box button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background: #00f7ff;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.login-box button:hover {
+  background: white;
+}</style>
+
+</style>
+</head>
+<body>
+
+<!-- Background Particles -->
+<div id="particles-js"></div>
+
+<!-- Main Container -->
+<div class="container">
+  
+  <div class="left-section">
+    <h1>Welcome to <span>SkillForge</span></h1>
+    <h2 id="typing"></h2>
+  </div>
+
+  <div class="login-box">
+    <h2>Login</h2>
+    <input type="text" placeholder="Email">
+    <input type="password" placeholder="Password">
+    <button>Login</button>
+    <p>Don't have an account? <a href="#">Signup</a></p>
+  </div>
+
+</div>
+
+<!-- Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<script src="script.js"></script>
+<script>// Typing Animation
+new Typed("#typing", {
+  strings: [
+    "Learn MERN Stack 🚀",
+    "Become Java Developer ☕",
+    "Master Python 🐍",
+    "Dominate JavaScript ⚡"
+  ],
+  typeSpeed: 50,
+  backSpeed: 30,
+  loop: true
+});
+
+// Particles Background
+particlesJS("particles-js", {
+  particles: {
+    number: { value: 80 },
+    size: { value: 3 },
+    move: { speed: 2 },
+    line_linked: { enable: true }
+  }
+});</script>
+
+</body>
+</html>
